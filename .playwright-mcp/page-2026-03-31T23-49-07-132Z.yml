@@ -1,0 +1,114 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Pool Schedule" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - navigation [ref=e7]:
+          - link "Calendar" [ref=e8] [cursor=pointer]:
+            - /url: /
+          - link "Admin" [ref=e9] [cursor=pointer]:
+            - /url: /admin
+    - main [ref=e10]:
+      - generic [ref=e11]:
+        - heading "Pool Schedule" [level=1] [ref=e12]
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - generic [ref=e17]: Open
+            - generic [ref=e20]: Pending
+            - generic [ref=e23]: Booked
+          - generic [ref=e25]:
+            - navigation "Navigation bar" [ref=e26]:
+              - button "Go to the Previous Month" [ref=e27]:
+                - img
+              - button "Go to the Next Month" [ref=e28]:
+                - img
+            - generic [ref=e29]:
+              - status [ref=e31]: March 2026
+              - grid "March 2026" [ref=e32]:
+                - rowgroup [ref=e33]:
+                  - row [ref=e34]:
+                    - columnheader [ref=e35]: Su
+                    - columnheader [ref=e36]: Mo
+                    - columnheader [ref=e37]: Tu
+                    - columnheader [ref=e38]: We
+                    - columnheader [ref=e39]: Th
+                    - columnheader [ref=e40]: Fr
+                    - columnheader [ref=e41]: Sa
+                - rowgroup [ref=e42]:
+                  - row "Sunday, March 1st, 2026 Monday, March 2nd, 2026 Tuesday, March 3rd, 2026 Wednesday, March 4th, 2026 Thursday, March 5th, 2026 Friday, March 6th, 2026 Saturday, March 7th, 2026" [ref=e43]:
+                    - gridcell "Sunday, March 1st, 2026" [ref=e44]:
+                      - button "Sunday, March 1st, 2026" [ref=e45]: "1"
+                    - gridcell "Monday, March 2nd, 2026" [ref=e46]:
+                      - button "Monday, March 2nd, 2026" [ref=e47]: "2"
+                    - gridcell "Tuesday, March 3rd, 2026" [ref=e48]:
+                      - button "Tuesday, March 3rd, 2026" [ref=e49]: "3"
+                    - gridcell "Wednesday, March 4th, 2026" [ref=e50]:
+                      - button "Wednesday, March 4th, 2026" [ref=e51]: "4"
+                    - gridcell "Thursday, March 5th, 2026" [ref=e52]:
+                      - button "Thursday, March 5th, 2026" [ref=e53]: "5"
+                    - gridcell "Friday, March 6th, 2026" [ref=e54]:
+                      - button "Friday, March 6th, 2026" [ref=e55]: "6"
+                    - gridcell "Saturday, March 7th, 2026" [ref=e56]:
+                      - button "Saturday, March 7th, 2026" [ref=e57]: "7"
+                  - row "Sunday, March 8th, 2026 Monday, March 9th, 2026 Tuesday, March 10th, 2026 Wednesday, March 11th, 2026 Thursday, March 12th, 2026 Friday, March 13th, 2026 Saturday, March 14th, 2026" [ref=e58]:
+                    - gridcell "Sunday, March 8th, 2026" [ref=e59]:
+                      - button "Sunday, March 8th, 2026" [ref=e60]: "8"
+                    - gridcell "Monday, March 9th, 2026" [ref=e61]:
+                      - button "Monday, March 9th, 2026" [ref=e62]: "9"
+                    - gridcell "Tuesday, March 10th, 2026" [ref=e63]:
+                      - button "Tuesday, March 10th, 2026" [ref=e64]: "10"
+                    - gridcell "Wednesday, March 11th, 2026" [ref=e65]:
+                      - button "Wednesday, March 11th, 2026" [ref=e66]: "11"
+                    - gridcell "Thursday, March 12th, 2026" [ref=e67]:
+                      - button "Thursday, March 12th, 2026" [ref=e68]: "12"
+                    - gridcell "Friday, March 13th, 2026" [ref=e69]:
+                      - button "Friday, March 13th, 2026" [ref=e70]: "13"
+                    - gridcell "Saturday, March 14th, 2026" [ref=e71]:
+                      - button "Saturday, March 14th, 2026" [ref=e72]: "14"
+                  - row "Sunday, March 15th, 2026 Monday, March 16th, 2026 Tuesday, March 17th, 2026 Wednesday, March 18th, 2026 Thursday, March 19th, 2026 Friday, March 20th, 2026 Saturday, March 21st, 2026" [ref=e73]:
+                    - gridcell "Sunday, March 15th, 2026" [ref=e74]:
+                      - button "Sunday, March 15th, 2026" [ref=e75]: "15"
+                    - gridcell "Monday, March 16th, 2026" [ref=e76]:
+                      - button "Monday, March 16th, 2026" [ref=e77]: "16"
+                    - gridcell "Tuesday, March 17th, 2026" [ref=e78]:
+                      - button "Tuesday, March 17th, 2026" [ref=e79]: "17"
+                    - gridcell "Wednesday, March 18th, 2026" [ref=e80]:
+                      - button "Wednesday, March 18th, 2026" [ref=e81]: "18"
+                    - gridcell "Thursday, March 19th, 2026" [ref=e82]:
+                      - button "Thursday, March 19th, 2026" [ref=e83]: "19"
+                    - gridcell "Friday, March 20th, 2026" [ref=e84]:
+                      - button "Friday, March 20th, 2026" [ref=e85]: "20"
+                    - gridcell "Saturday, March 21st, 2026" [ref=e86]:
+                      - button "Saturday, March 21st, 2026" [ref=e87]: "21"
+                  - row "Sunday, March 22nd, 2026 Monday, March 23rd, 2026 Tuesday, March 24th, 2026 Wednesday, March 25th, 2026 Thursday, March 26th, 2026 Friday, March 27th, 2026 Saturday, March 28th, 2026" [ref=e88]:
+                    - gridcell "Sunday, March 22nd, 2026" [ref=e89]:
+                      - button "Sunday, March 22nd, 2026" [ref=e90]: "22"
+                    - gridcell "Monday, March 23rd, 2026" [ref=e91]:
+                      - button "Monday, March 23rd, 2026" [ref=e92]: "23"
+                    - gridcell "Tuesday, March 24th, 2026" [ref=e93]:
+                      - button "Tuesday, March 24th, 2026" [ref=e94]: "24"
+                    - gridcell "Wednesday, March 25th, 2026" [ref=e95]:
+                      - button "Wednesday, March 25th, 2026" [ref=e96]: "25"
+                    - gridcell "Thursday, March 26th, 2026" [ref=e97]:
+                      - button "Thursday, March 26th, 2026" [ref=e98]: "26"
+                    - gridcell "Friday, March 27th, 2026" [ref=e99]:
+                      - button "Friday, March 27th, 2026" [ref=e100]: "27"
+                    - gridcell "Saturday, March 28th, 2026" [ref=e101]:
+                      - button "Saturday, March 28th, 2026" [ref=e102]: "28"
+                  - row "Sunday, March 29th, 2026 Monday, March 30th, 2026 Today, Tuesday, March 31st, 2026 Wednesday, April 1st, 2026 Thursday, April 2nd, 2026 Friday, April 3rd, 2026 Saturday, April 4th, 2026" [ref=e103]:
+                    - gridcell "Sunday, March 29th, 2026" [ref=e104]:
+                      - button "Sunday, March 29th, 2026" [ref=e105]: "29"
+                    - gridcell "Monday, March 30th, 2026" [ref=e106]:
+                      - button "Monday, March 30th, 2026" [ref=e107]: "30"
+                    - gridcell "Today, Tuesday, March 31st, 2026" [ref=e108]:
+                      - button "Today, Tuesday, March 31st, 2026" [ref=e109]: "31"
+                    - gridcell "Wednesday, April 1st, 2026" [ref=e110]:
+                      - button "Wednesday, April 1st, 2026" [ref=e111]: "1"
+                    - gridcell "Thursday, April 2nd, 2026" [ref=e112]:
+                      - button "Thursday, April 2nd, 2026" [ref=e113]: "2"
+                    - gridcell "Friday, April 3rd, 2026" [ref=e114]:
+                      - button "Friday, April 3rd, 2026" [ref=e115]: "3"
+                    - gridcell "Saturday, April 4th, 2026" [ref=e116]:
+                      - button "Saturday, April 4th, 2026" [ref=e117]: "4"
+  - region "Notifications alt+T"

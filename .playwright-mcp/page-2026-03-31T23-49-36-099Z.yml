@@ -1,0 +1,20 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Pool Schedule" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - navigation [ref=e7]:
+          - link "Calendar" [ref=e8] [cursor=pointer]:
+            - /url: /
+          - link "Admin" [ref=e9] [cursor=pointer]:
+            - /url: /admin
+    - main [ref=e10]:
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]: Admin Access
+          - generic [ref=e15]: Enter your PIN to manage the pool schedule
+        - generic [ref=e17]:
+          - textbox [ref=e18]
+          - button "Login" [disabled]
+  - region "Notifications alt+T"

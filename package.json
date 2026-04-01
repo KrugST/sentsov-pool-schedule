@@ -1,0 +1,15 @@
+{
+  "name": "sentsov-pool-schedule",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w packages/frontend\" \"npm run dev -w packages/backend\"",
+    "build": "npm run build -w packages/frontend && npm run build -w packages/backend",
+    "start": "npm run start -w packages/backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
