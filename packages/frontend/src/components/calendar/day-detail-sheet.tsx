@@ -1,11 +1,11 @@
 import { useState } from "react";
 import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetDescription,
-} from "@/components/ui/sheet";
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { BookingForm } from "@/components/booking/booking-form";
@@ -30,34 +30,38 @@ export function DayDetailSheet({
 }: DayDetailSheetProps) {
   const [showBookingForm, setShowBookingForm] = useState(false);
 
-  if (!date || !slot) return null;
-
-  const dateStr = date.toLocaleDateString("en-US", {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+  const dateStr = date
+    ? date.toLocaleDateString("en-US", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : "";
 
   const hasApproved = bookings.some((b) => b.status === "approved");
   const hasPending = bookings.some((b) => b.status === "pending");
   const canBook = !hasApproved && !hasPending;
 
   return (
-    <Sheet open={open} onOpenChange={(o) => {
-      onOpenChange(o);
-      if (!o) setShowBookingForm(false);
-    }}>
-      <SheetContent className="overflow-y-auto">
-        <SheetHeader>
-          <SheetTitle>{dateStr}</SheetTitle>
-          <SheetDescription>
-            Pool available: {slot.startTime} - {slot.endTime}
-          </SheetDescription>
-        </SheetHeader>
+    <Dialog
+      open={open}
+      onOpenChange={(o) => {
+        onOpenChange(o);
+        if (!o) setShowBookingForm(false);
+      }}
+    >
+      <DialogContent className="bg-white dark:bg-white dark:text-black">
+        <DialogHeader>
+          <DialogTitle>{dateStr}</DialogTitle>
+          <DialogDescription>
+            {slot
+              ? `Pool available: ${slot.startTime} - ${slot.endTime}`
+              : "No slot info"}
+          </DialogDescription>
+        </DialogHeader>
 
-        <div className="mt-6 space-y-4 px-4">
-          {/* Existing bookings */}
+        <div className="space-y-4">
           {bookings.length > 0 && (
             <div className="space-y-3">
               <h3 className="text-sm font-medium text-[var(--muted-foreground)]">
@@ -87,8 +91,7 @@ export function DayDetailSheet({
             </div>
           )}
 
-          {/* Book button or form */}
-          {canBook && !showBookingForm && (
+          {canBook && !showBookingForm && slot && (
             <Button
               className="w-full"
               onClick={() => setShowBookingForm(true)}
@@ -97,7 +100,7 @@ export function DayDetailSheet({
             </Button>
           )}
 
-          {canBook && showBookingForm && (
+          {canBook && showBookingForm && slot && (
             <BookingForm
               slotId={slot.id}
               onSuccess={() => {
@@ -119,8 +122,8 @@ export function DayDetailSheet({
             </p>
           )}
         </div>
-      </SheetContent>
-    </Sheet>
+      </DialogContent>
+    </Dialog>
   );
 }
 

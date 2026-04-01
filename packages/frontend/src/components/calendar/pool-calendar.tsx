@@ -67,11 +67,11 @@ export function PoolCalendar({ month, onMonthChange }: PoolCalendarProps) {
 
   const modifiersClassNames = {
     poolOpen:
-      "bg-pool-open/20 text-green-900 hover:bg-pool-open/30 dark:text-green-100",
+      "!bg-green-500/15 !text-black hover:!bg-green-500/25",
     poolPending:
-      "bg-pool-pending/20 text-amber-900 hover:bg-pool-pending/30 dark:text-amber-100",
+      "!bg-amber-500/15 !text-black hover:!bg-amber-500/25",
     poolApproved:
-      "bg-pool-approved/20 text-blue-900 hover:bg-pool-approved/30 dark:text-blue-100",
+      "!bg-blue-500/15 !text-black hover:!bg-blue-500/25",
   };
 
   function handleDayClick(day: Date) {
